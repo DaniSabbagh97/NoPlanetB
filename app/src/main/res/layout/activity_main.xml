@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main_context"
+    tools:context=".BMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/planet"
+        android:background="@drawable/planetearth"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="80sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivRocket"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/rocketlogo"
+                app:civ_border_color="#EEE"
+                app:civ_border_width="0dp"
+                app:civ_shadow="true"
+
+                app:civ_shadow_color="#FFF"
+                app:civ_shadow_radius="0" />
+
+            <TextView
+                android:id="@+id/tv1Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="And no next Generation"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/myswipe"
+                android:layout_width="478dp"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ac nisi in mollis. Sed hendrerit dapibus purus, quis finibus diam. Vestibulum sit amet varius risus. Vestibulum non purus velit. In at sem quis mauris ultrices commodo. Suspendisse ut metus vitae mauris venenatis ullamcorper. Nullam eleifend id eros vitae dapibus. Quisque volutpat pulvinar sem, at cursus dolor. Phasellus volutpat dui enim, nec tempor est consequat elementum. Nulla nunc urna, porttitor in auctor non, faucibus lobortis elit. In nunc ipsum, placerat nec nulla vel, efficitur vestibulum dolor. Duis tincidunt massa a ligula faucibus, non suscipit nisi facilisis. Duis euismod lacus id nunc volutpat vulputate. Quisque interdum nisl massa, et dignissim ex lobortis id. Etiam urna sem, varius vel est eget, imperdiet tristique felis. In tincidunt facilisis." />
+                </ScrollView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="salir" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Seguir" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

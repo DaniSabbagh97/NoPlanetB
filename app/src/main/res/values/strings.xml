@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NoPlanetB</string>
+    <string name="btn_Login">GO</string>
+    <string name="username_hint">username</string>
+</resources>
